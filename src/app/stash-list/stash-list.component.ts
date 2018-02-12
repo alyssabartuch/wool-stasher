@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Wool } from '../wool';
+import { WOOLS } from '../mock-wool-list';
 
 @Component({
   selector: 'app-stash-list',
@@ -7,14 +8,15 @@ import { Wool } from '../wool';
   styleUrls: ['./stash-list.component.css']
 })
 export class StashListComponent implements OnInit {
-    wool: Wool = {
-        id: 101,
-        name: 'Herding Cats',
-        dateStashed: 'March 2017',
-        fiber: 'Merino',
-        status: 25,
-        notes: 'some meaningful information about this wool'
-    };
+    wools = WOOLS;
+
+
+    selectedWool: Wool;
+
+    onSelect(wool: Wool): void {
+        this.selectedWool = wool;
+    }
+
 
     constructor() { }
 
