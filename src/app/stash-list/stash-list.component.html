@@ -19,8 +19,8 @@
 
 <div class="list-container">
     <h2>My Stash</h2>
-    <ul class="list-group wools">
-      <li class="list-group-item" *ngFor="let wool of wools" [class.selected]="wool === selectedWool" (click)="onSelect(wool)">
+    <ul class="wools">
+      <li *ngFor="let wool of wools" [class.selected]="wool === selectedWool" (click)="onSelect(wool)">
         <span class="badge">{{ wool.id }}</span> {{ wool.name }}
       </li>
     </ul>
