@@ -1,5 +1,10 @@
-.card {
-    width: 75%;
+.list-card {
+    width: 500px;
+
+}
+
+.display-card {
+    width: 500px;
 }
 
 .selected {
@@ -46,7 +51,7 @@
   background-color: #607D8B;
   line-height: 1em;
   position: relative;
-  left: -1px;
+  left: -5px;
   top: -4px;
   height: 40px;
   margin-right: .8em;
